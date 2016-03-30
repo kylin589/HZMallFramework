@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>CouchbaseAspNetExtended</id>
+    <version>1.3.5.0</version>
+    <title>Couchbase ASP.NET SessionState and OutputCache Providers with Compression, Logging and other extended features</title>
+    <authors>Couchbase Inc for couchbase-aspnet, Clayton Stangeland for LZ4Sharp</authors>
+    <owners>Couchbase Inc for couchbase-aspnet, Clayton Stangeland for LZ4Sharp</owners>
+    <projectUrl>https://github.com/evereq/couchbase-aspnet</projectUrl>
+    <iconUrl>https://raw.github.com/evereq/CouchbaseAspNetExtended.nuget/master/images/couchbaseasp.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Port of the Enyim Memcached Provider to Couchbase Server with some improvements:
+- Target framework is .NET 4.5
+- Session data compression is supported. 
+- NLog logging can be enabled to output basic information for all Save / Load actions (item id and size before and after compression)
+- LZ4 fast compression algorithm supported 
+- QuickLZ very fast compression algorithm supported and is default algorithm if compression enabled (http://www.quicklz.com).
+- LZ4Sharp library (https://github.com/stangelandcl/LZ4Sharp) used for fastest compression
+- Provider write his configuration during start to Windows Event Log and in addition to log file.
+
+Copyrights:
+- couchbase-aspnet project is Copyright (C) 2012 Couchbase, Inc
+- LZ4Sharp is Copyright (C) 2011, Clayton Stangeland
+- parts of LZ4Sharp are LZ4 - Fast LZ compression algorithm is Copyright (C) 2011, Yann Collet.
+- QuickLZ data compression library
+is Copyright (C) 2006-2011 Lasse Mikkel Reinhold</description>
+    <summary>This library provides infrastructure support for using Couchbase Server and ASP.NET for Session State and Output Caching Providers with some extended functionality</summary>
+    <releaseNotes>Starting from version 1.3.3.3 Target framework set to .NET 4.5</releaseNotes>
+    <copyright>see Description</copyright>
+    <tags>Couchbase nosql asp.net SessionState OutputCache Compression</tags>
+    <dependencies>
+      <dependency id="NLog" version="2.1.0" />
+      <dependency id="Newtonsoft.Json" version="6.0.3" />
+      <dependency id="CouchbaseNetClient" version="1.3.5" />
+      <dependency id="Hammock" version="1.3.1" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,12 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<HZMall.Domain.AdminModel.Models.Categoreis.CategoryModel>
+<div class="layoutNav">
+    <div class="navMain">
+        @foreach (var category in Model)
+        {
+            <div class="navCategorys">@category.CategoryLanguageModel.CategoryName</div>
+        }
+    </div>
+</div>

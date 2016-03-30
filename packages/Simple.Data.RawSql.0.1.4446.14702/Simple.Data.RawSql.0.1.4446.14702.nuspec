@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Simple.Data.RawSql</id>
+    <version>0.1.4446.14702</version>
+    <title>Simple.Data.RawSql</title>
+    <authors>Jason Dentler</authors>
+    <owners>Jason Dentler</owners>
+    <licenseUrl>https://raw.github.com/jasondentler/Simple.Data.RawSql/master/license.txt</licenseUrl>
+    <projectUrl>https://github.com/jasondentler/Simple.Data.RawSql</projectUrl>
+    <iconUrl>http://simplefx.org/images/simpledata100x100.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Raw sql query extensions to Simple.Data</description>
+    <releaseNotes>See project website for recent commits.</releaseNotes>
+    <copyright>Copyright Jason Dentler 2012</copyright>
+    <tags>Simple.Data</tags>
+    <dependencies>
+      <dependency id="Simple.Data.Ado" version="0.12.2.2" />
+    </dependencies>
+  </metadata>
+</package>

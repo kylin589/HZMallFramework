@@ -1,0 +1,16 @@
+﻿@using System.Web.Optimization
+@using HZMall.Service.Common
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css/" + (CultureHelper.GetCurrentCulture() + ".css"))
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
